@@ -520,7 +520,7 @@ Infubinol_vol = pd.DataFrame(Infubinol_last)
 Infubinol_merge = pd.merge(Infubinol_vol, Combined_data, on=("Mouse ID","Timepoint"),how="left")
 Infubinol_merge.head()
 ```
-#### The output looks as follws:
+The output looks as follws:
 ![Infubinol quartiles and IQR](Images/Infubinol_quartiles_and_IQR.png.png)
 
 #### Infubinol Outliers using upper and lower bounds
@@ -651,23 +651,58 @@ A line plot looks as follws:
 ![Line Plot](Images/line_graph.png)
 
 
-##  Scatter Plots
+###  Scatter Plots
 * A scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen was created. 
 
 A scatter plot looks as follws:
 ![Scatter Plot](Images/scatterplot.png)
 
+## Correlation and Regression
 
-* Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
+* A correlation coefficient, and linear regression analysis was conducted  between mouse weight and average tumor volume for the Capomulin treatment. A Plot of the linear regression model created on top of the previous scatter plot.
 
-* Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
+### Correlation
+```python 
+corr=round(st.pearsonr(avg_capm_vol['Weight (g)'],avg_capm_vol['Tumor Volume (mm3)'])[0],2)
+print(f"The correlation between mouse weight and average tumor volume is {corr}")
+```
+A line plot looks as follws:
+![Correlation Coefficient Out put](Images/correlation coefficient.png)
 
-Here are some final considerations:
+### Regression
+```python 
+x_values = avg_capm_vol['Weight (g)']
+y_values = avg_capm_vol['Tumor Volume (mm3)']
 
-* You must use proper labeling of your plots, to include properties such as: plot titles, axis labels, legend labels, _x_-axis and _y_-axis limits, etc.
+(slope, intercept, rvalue, pvalue, stderr) = linregress(x_values, y_values)
+regress_values = x_values * slope + intercept
 
-* See the [starter workbook](Pymaceuticals/pymaceuticals_starter.ipynb) for help on what modules to import and expected format of the notebook.
+print(f"slope:{slope}")
+print(f"intercept:{intercept}")
+print(f"rvalue (Correlation coefficient):{rvalue}")
+print(f"pandas (Correlation coefficient):{corr}")
+print(f"stderr:{stderr}")
 
+line_eq = "y = " + str(round(slope,2)) + "x + " + str(round(intercept,2))
+
+print(line_eq)
+```
+A linear regression output looks as follws:
+![linear regression outpu](Images/linear_regression.png)
+
+### Add the linear regression equation and line to plot
+```python
+fig1, ax1 = plt.subplots(figsize=(15, 10))
+plt.scatter(x_values,y_values,s=175, color="blue")
+plt.plot(x_values,regress_values,"r-")
+plt.xlabel('Weight(g)',fontsize =14)
+plt.ylabel('Average Tumore Volume (mm3)',fontsize =14)
+ax1.annotate(line_eq, xy=(20, 40), xycoords='data',xytext=(0.8, 0.95), textcoords='axes fraction',horizontalalignment='right', verticalalignment='top',fontsize=30,color="red")
+plt.savefig("../Images/linear_regression.png", bbox_inches = "tight")
+plt.show()
+```
+A linear regression plot looks as follws:
+![linear_regression plot](Images/linear_regression.png)
 
 ### Copyright
 
