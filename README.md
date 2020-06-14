@@ -18,12 +18,12 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 * 
 
 ## Table of Contents
-* [Data cleaning](# Data Cleaning)
-* [summary statistics](# Summary statistics)
-* [Bar and Pie Charts](# Bar and Pie Charts)
-* [Quartiles, Outliers and Boxplots](# Quartiles, Outliers and Boxplots)
-* [Line and Scatter Plots](# Line and Scatter Plots)
-* [Correlation and Regression](README.md/## Correlation and Regression)
+* [Data cleaning](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Data Cleaning)
+* [summary statistics](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Summary statistics)
+* [Bar and Pie Charts](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Bar and Pie Charts)
+* [Quartiles, Outliers and Boxplots](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Quartiles, Outliers and Boxplots)
+* [Line and Scatter Plots](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Line and Scatter Plots)
+* [Correlation and Regression](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Correlation and Regression)
 
 
 
