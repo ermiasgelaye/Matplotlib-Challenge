@@ -213,10 +213,10 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 
 ### The Bar Cahrts looks as follows:
 
-## Pandas's `DataFrame.plot()`
+#### Pandas's `DataFrame.plot()`
 ![Pandas's `DataFrame.plot()`](Images/Pan_mice_per_treat.png)
-## Matplotlib's `pyplot`
-![Matplotlib's `pyplot`](Images/mat_mice_per_treat.pn)
+#### Matplotlib's `pyplot`
+![Matplotlib's `pyplot`](Images/mat_mice_per_treat.png)
 
 
 
