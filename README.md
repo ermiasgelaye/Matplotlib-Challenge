@@ -303,6 +303,7 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
       <td>2</td>
     </tr>
   </tbody>
+</table>
 
 #### Capomulin Quartiles and IQR
 ```python
