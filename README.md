@@ -4,10 +4,11 @@
 ![Laboratory](Images/Laboratory.jpg)
 
 ## Background
+These respository apply a Python Matplotlib to visualize a real-world Pymaceuticals data. The data is sourced from Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
 
+This analysis used a complete data from their most recent animal study in two datasets in CSV format. Data set one is [Mouse_metadata.csv](Pymaceuticals/data/Mouse_metadata.csv) wich includes 249 mice identified data with SCC tumor growth were treated through a variety of drug `regimens`, and their `Sex`, `Age_months`	and `Weight (g)`. The other dataset is [Study_results.csv](Pymaceuticals/data/Study_results.csv) file which includes the results of the study in each columns `Mouse I`,`Timepoint`,`Tumor Volume (mm3)`, and `Metastatic Sites`.
 
-These respository apply a Python Matplotlib to visualize a real-world Pymaceuticals data. 
-
+The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. The analysis also generated all of the table and figures needed for the technical, and top-level summary report of the study. For this analysis both datasets imported, merged,cleaned and the aggregate data diplayed in to Python Pandas dataframes, visualized in Matplotlib, and other libraries used in order to make a stastical analysis. The project is conducted in Jupyter notebook to showcase, and communicate the analysis report the following link is created: [Jupyter Notebook Viewer](https://nbviewer.jupyter.org/github/ermiasgelaye/Matplotlib-Challenge/blob/master/Pymaceuticals/.ipynb_checkpoints/pymaceuticals_starter-checkpoint.ipynb) 
 
 ## Observable Trends
 
@@ -28,17 +29,85 @@ These respository apply a Python Matplotlib to visualize a real-world Pymaceutic
 * [Scores by School Size](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
 * [Scores by School Type](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
 
-So, let's take what you've learned about Python Matplotlib and apply it to a real-world situation and dataset:
 
-While your data companions rushed off to jobs in finance and government, you remained adamant that science was the way for you. Staying true to your mission, you've joined Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
+## Solutions
 
-As a senior data analyst at the company, you've been given access to the complete data from their most recent animal study. In this study, 249 mice identified with SCC tumor growth were treated through a variety of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. You have been tasked by the executive team to generate all of the tables and figures needed for the technical report of the study. The executive team also has asked for a top-level summary of the study results.
+* The data was loaded, read, combined, duplicated removed and the clean data out put looks as follows
 
-## Instructions
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mouse ID</th>
+      <th>Drug Regimen</th>
+      <th>Sex</th>
+      <th>Age_months</th>
+      <th>Weight (g)</th>
+      <th>Timepoint</th>
+      <th>Tumor Volume (mm3)</th>
+      <th>Metastatic Sites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>k403</td>
+      <td>Ramicane</td>
+      <td>Male</td>
+      <td>21</td>
+      <td>16</td>
+      <td>0</td>
+      <td>45.000000</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>k403</td>
+      <td>Ramicane</td>
+      <td>Male</td>
+      <td>21</td>
+      <td>16</td>
+      <td>5</td>
+      <td>38.825898</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>k403</td>
+      <td>Ramicane</td>
+      <td>Male</td>
+      <td>21</td>
+      <td>16</td>
+      <td>10</td>
+      <td>35.014271</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>k403</td>
+      <td>Ramicane</td>
+      <td>Male</td>
+      <td>21</td>
+      <td>16</td>
+      <td>15</td>
+      <td>34.223992</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>k403</td>
+      <td>Ramicane</td>
+      <td>Male</td>
+      <td>21</td>
+      <td>16</td>
+      <td>20</td>
+      <td>32.997729</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
-Your tasks are to do the following:
 
-* Before beginning the analysis, check the data for any mouse ID with duplicate time points and remove any data associated with that mouse ID.
 
 * Use the cleaned data for the remaining steps.
 
