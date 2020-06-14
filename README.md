@@ -1,6 +1,6 @@
 # Matplotlib - The Power of Plots
 
-### "Visual storytelling of one kind or another has been around since caveman were drawing on the walls." Frank Darabont
+#### "Visual storytelling of one kind or another has been around since caveman were drawing on the walls." Frank Darabont
 ![Laboratory](Images/Laboratory.jpg)
 
 ## Background
