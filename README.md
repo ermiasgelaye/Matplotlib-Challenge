@@ -651,7 +651,7 @@ A box and whisker plot looks as follws:
 ![Line Plot](Images/line_graph.png)
 
 
-###  Scatter Plots
+###  Scatter Plot
 * A scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen was created. 
 
    A scatter plot looks as follws:
@@ -690,7 +690,7 @@ print(line_eq)
    A linear regression output looks as follws:
 ![linear regression outpu](Images/linear_regression_output.png)
 
-### Add the linear regression equation and line to plot
+###  Adding a linear regression line to the scatter plot
 ```python
 fig1, ax1 = plt.subplots(figsize=(15, 10))
 plt.scatter(x_values,y_values,s=175, color="blue")
