@@ -124,11 +124,6 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
     </tr>
     <tr>
       <th>Drug Regimen</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
     <tr>
       <th>Capomulin</th>
