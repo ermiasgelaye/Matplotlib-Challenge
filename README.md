@@ -130,8 +130,6 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
       <th></th>
       <th></th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <th>Capomulin</th>
       <td>40.675741</td>
@@ -215,6 +213,7 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 </table>
 
 
+Bar and Pie Charts
 * Generate a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows  the number of total mice for each treatment regimen throughout the course of the study.
 
   * **NOTE:** These plots should look identical.
