@@ -640,15 +640,23 @@ print(f"Values above {upper_bound} could be outliers.")
 
 * A box and whisker plot of the final tumor volume for all four treatment regimens was generated, and a potential outliers highlighted by using color, and style.
 
-#### A box and whisker plot looks as follws:
+A box and whisker plot looks as follws:
 ![Ceftamin outliers_upper and lower_bounds](Images/box_plot.png)
 
+## Line and Scatter Plots
+##  Line Plot
+* A line plot created on selected mouse (`b742`) that was treated with Capomulin, and generate a line plot of time point versus tumor volume for that mouse.
+
+A line plot looks as follws:
+![Line Plot](Images/line_graph.png
 
 
+##  Scatter Plots
+* A scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen was created. 
 
-* Select a mouse that was treated with Capomulin and generate a line plot of time point versus tumor volume for that mouse.
+A scatter plot looks as follws:
+![Scatter Plot](Images/scatterplot.png)
 
-* Generate a scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
 
 * Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
 
