@@ -18,17 +18,13 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 * 
 
 ## Table of Contents
-* [Data cleaning](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [summary statistics](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Bar and Pie Charts](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Quartiles, Outliers and Boxplots](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Top Performing Schools (By % Overall Passing)](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Bottom Performing Schools (By % Overall Passing)](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Math Scores by Grade](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Reading Scores by Grade](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Scores by School Spending](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Scores by School Size](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [Scores by School Type](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
+* [Data cleaning](## Data Cleaning)
+* [summary statistics](## Summary statistics)
+* [Bar and Pie Charts](## Bar and Pie Charts)
+* [Quartiles, Outliers and Boxplots](## Quartiles, Outliers and Boxplots)
+* [Line and Scatter Plots](## Line and Scatter Plots)
+* [Correlation and Regression](## Correlation and Regression)
+
 
 
 ## Solutions
@@ -690,7 +686,7 @@ print(line_eq)
    A linear regression output looks as follws:
 ![linear regression outpu](Images/linear_regression_output.png)
 
-###  Adding a linear regression line to the scatter plot
+### Adding a linear regression line to the scatter plot
 ```python
 fig1, ax1 = plt.subplots(figsize=(15, 10))
 plt.scatter(x_values,y_values,s=175, color="blue")
