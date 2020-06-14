@@ -32,7 +32,7 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 
 ## Solutions
 
-* The data was loaded, read, combined, duplicated removed and the clean data out put looks as follows
+* The data was loaded, read, combined, duplicate removed and the head (5 rows on the top)  clean data out put looks as follows
 
 <table border="1" class="dataframe">
   <thead>
