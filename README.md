@@ -211,8 +211,7 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
       <td>48.533355</td>
       <td>6.966589</td>
       <td>0.516398</td>
-    </tr>
-  </tbody>
+
 </table>
 
 
