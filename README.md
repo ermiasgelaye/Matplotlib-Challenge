@@ -18,14 +18,12 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 * 
 
 ## Table of Contents
-[Data cleaning](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Data Cleaning)
-[summary statistics](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Summary statistics)
-Bar and Pie Charts](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Bar and Pie Charts)
-[Quartiles, Outliers and Boxplots](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Quartiles, Outliers and Boxplots)
-[Line and Scatter Plots](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Line and Scatter Plots)
-[Correlation and Regression](https://github.com/ermiasgelaye/Matplotlib-Challenge/edit/master/README.md/## Correlation and Regression)
-
-
+* [Data cleaning](https://nbviewer.jupyter.org/github/ermiasgelaye/Matplotlib-Challenge/blob/master/Pymaceuticals/.ipynb_checkpoints/pymaceuticals_starter-checkpoint.ipynb)
+* [summary statistics](https://nbviewer.jupyter.org/github/ermiasgelaye/Matplotlib-Challenge/blob/master/Pymaceuticals/.ipynb_checkpoints/pymaceuticals_starter-checkpoint.ipynb)
+* [Bar and Pie Charts](https://nbviewer.jupyter.org/github/ermiasgelaye/Matplotlib-Challenge/blob/master/Pymaceuticals/.ipynb_checkpoints/pymaceuticals_starter-checkpoint.ipynb)
+* [Quartiles, Outliers and Boxplots](https://nbviewer.jupyter.org/github/ermiasgelaye/Matplotlib-Challenge/blob/master/Pymaceuticals/.ipynb_checkpoints/pymaceuticals_starter-checkpoint.ipynb)
+* [Line and Scatter Plots](https://nbviewer.jupyter.org/github/ermiasgelaye/Matplotlib-Challenge/blob/master/Pymaceuticals/.ipynb_checkpoints/pymaceuticals_starter-checkpoint.ipynb)
+* [Correlation and Regression](https://nbviewer.jupyter.org/github/ermiasgelaye/Matplotlib-Challenge/blob/master/Pymaceuticals/.ipynb_checkpoints/pymaceuticals_starter-checkpoint.ipynb)
 
 ## Solutions
 
