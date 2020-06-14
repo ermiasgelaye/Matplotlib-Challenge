@@ -521,7 +521,7 @@ Infubinol_merge = pd.merge(Infubinol_vol, Combined_data, on=("Mouse ID","Timepoi
 Infubinol_merge.head()
 ```
    The output looks as follws:
-![Infubinol quartiles and IQR](Images/Infubinol_quartiles_and_IQR.png.png)
+![Infubinol quartiles and IQR](Images/Infubinol_quartiles_and_IQR.png)
 
 #### Infubinol Outliers using upper and lower bounds
 ```python
