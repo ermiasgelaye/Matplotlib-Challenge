@@ -18,11 +18,11 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 * 
 
 ## Table of Contents
-* [Data cleaning](README.md/## Data Cleaning)
-* [summary statistics](README.md/## Summary statistics)
-* [Bar and Pie Charts](README.md/## Bar and Pie Charts)
-* [Quartiles, Outliers and Boxplots](README.md/## Quartiles, Outliers and Boxplots)
-* [Line and Scatter Plots](README.md/## Line and Scatter Plots)
+* [Data cleaning](# Data Cleaning)
+* [summary statistics](# Summary statistics)
+* [Bar and Pie Charts](# Bar and Pie Charts)
+* [Quartiles, Outliers and Boxplots](# Quartiles, Outliers and Boxplots)
+* [Line and Scatter Plots](# Line and Scatter Plots)
 * [Correlation and Regression](README.md/## Correlation and Regression)
 
 
