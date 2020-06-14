@@ -5,7 +5,7 @@
 ![Laboratory](Images/Laboratory.jpg)
 
 ## Background
-These respository apply a Python Matplotlib to visualize a real-world lab research data. The data is sourced from Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
+These respository apply a Python Matplotlib to visualize a real-world pharmaceutical data. The data is sourced from Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
 
 This analysis used a complete data from their most recent animal study in two datasets in CSV format. Data set one is [Mouse_metadata.csv](Pymaceuticals/data/Mouse_metadata.csv) wich includes 249 mice identified data with SCC tumor growth were treated through a variety of drug `regimens`, and their `Sex`, `Age_months`	and `Weight (g)`. The other dataset is [Study_results.csv](Pymaceuticals/data/Study_results.csv) file which includes the results of the study in each columns `Mouse I`,`Timepoint`,`Tumor Volume (mm3)`, and `Metastatic Sites`.
 
