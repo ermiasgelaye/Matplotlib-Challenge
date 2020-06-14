@@ -116,11 +116,11 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
   <thead>
     <tr>
       <th></th>
-      <th>mean</th>
-      <th>median</th>
-      <th>var</th>
-      <th>std</th>
-      <th>sem</th>
+      <th>Mean</th>
+      <th>Median</th>
+      <th>Variance</th>
+      <th>Standard Deviation</th>
+      <th>SEM</th>
     </tr>
     <tr>
       <th>Drug Regimen</th>
@@ -214,8 +214,6 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
     </tr>
   </tbody>
 </table>
-</div>
-</div>
 
 
 * Generate a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows  the number of total mice for each treatment regimen throughout the course of the study.
