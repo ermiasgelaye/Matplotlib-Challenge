@@ -633,10 +633,10 @@ upper_bound = upperq + (1.5*iqr)
 print(f"Values below {lower_bound} could be outliers.")
 print(f"Values above {upper_bound} could be outliers.")
 ```
-#### The output looks as follws:
+The output looks as follws:
 ![Ceftamin outliers_upper and lower_bounds](Images/Ceftamin_outliers_upper_and_lower_bounds.png)
 
-#### Box and Whisker Plot
+## Box and Whisker Plot
 
 * A box and whisker plot of the final tumor volume for all four treatment regimens was generated, and a potential outliers highlighted by using color, and style.
 
@@ -644,11 +644,11 @@ A box and whisker plot looks as follws:
 ![Ceftamin outliers_upper and lower_bounds](Images/box_plot.png)
 
 ## Line and Scatter Plots
-##  Line Plot
+###  Line Plot
 * A line plot created on selected mouse (`b742`) that was treated with Capomulin, and generate a line plot of time point versus tumor volume for that mouse.
 
 A line plot looks as follws:
-![Line Plot](Images/line_graph.png
+![Line Plot](Images/line_graph.png)
 
 
 ##  Scatter Plots
