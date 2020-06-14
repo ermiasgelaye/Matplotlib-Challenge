@@ -320,8 +320,8 @@ print(f"The upper quartile of Capomulin tumors: {upperq}")
 print(f"The interquartile range of Capomulin tumors: {iqr}")
 print(f"The median of Capomulin tumors: {quartiles[0.5]} ")
 ```
- #### The output looks as follws:
-  ![Capomulinc](Images/Capomulin_quartiles_and_IQR.png)
+The output looks as follws:
+![Capomulinc](Images/Capomulin_quartiles_and_IQR.png)
 
 #### Capomulin Outliers using upper and lower bounds
 ```python 
@@ -330,12 +330,12 @@ upper_bound = upperq + (1.5*iqr)
 
 print(f"Capomulin treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
 ```
- #### The output looks as follws:
-  ![Capomulin outliers_upper and lower_bounds](Images/cap_outliers_upper_and_lower_bounds.png)
+The output looks as follws:
+![Capomulin outliers_upper and lower_bounds](Images/cap_outliers_upper_and_lower_bounds.png)
 
 
 #### Ramicane Final Tumor Volume
-table border="1" class="dataframe">
+<table border="1" class="dataframe">
   <thead>
     <tr>
       <th></th>
@@ -424,7 +424,7 @@ print(f"The interquartile range of Ramicane tumors is: {iqr}")
 print(f"The median of Ramicane tumors is: {quartiles[0.5]} ")
 
 ```
-#### The output looks as follws:
+The output looks as follws:
 ![Ramicane quartiles and IQR](Images/Ramicane_quartiles_and_IQR.png)
 
   
@@ -435,7 +435,7 @@ upper_bound = upperq + (1.5*iqr)
 
 print(f"Ramicane treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
 ```
-#### The output looks as follws:
+The output looks as follws:
 ![Ramicane outliers_upper and lower_bounds](Images/Ramicane_outliers_upper_and_lower_bounds.png)
 
 #### Infubinol Final Tumor Volume
@@ -530,7 +530,7 @@ upper_bound = upperq + (1.5*iqr)
 
 print(f"Infubinol treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
 ```
-#### The output looks as follws:
+The output looks as follws:
 ![Infubinol outliers_upper and lower_bounds](Images/Infubinol_outliers_upper_and_lower_bounds.png)
 
 
@@ -622,7 +622,8 @@ print(f"The upper quartile of temperatures is: {upperq}")
 print(f"The interquartile range of temperatures is: {iqr}")
 print(f"The the median of temperatures is: {quartiles[0.5]} ")
 ```
-#### The output looks as follws:
+
+The output looks as follws:
 ![Ceftamin quartiles and IQR](Images/Ceftamin_quartiles_and_IQR.png)
 
 #### Ceftamin Outliers using upper and lower bounds
