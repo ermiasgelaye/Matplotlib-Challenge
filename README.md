@@ -21,7 +21,7 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 * [Data cleaning](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
 * [summary statistics](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
 * [Bar and Pie Charts](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
-* [School Summary](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
+* [Quartiles, Outliers and Boxplots](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
 * [Top Performing Schools (By % Overall Passing)](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
 * [Bottom Performing Schools (By % Overall Passing)](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
 * [Math Scores by Grade](https://nbviewer.jupyter.org/github/ermiasgelaye/pandas-challenge/blob/master/PyCitySchools/.ipynb_checkpoints/PyCitySchools_starter-checkpoint.ipynb)
@@ -226,7 +226,126 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 #### Matplotlib's `pyplot`
 ![Matplotlib's `pyplot`](Images/pi_plot.png)
 
-* Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
+
+## Quartiles, Outliers and Boxplots
+
+* The final tumor volume of each mouse across four of the most promising treatment regimens was created: Capomulin, Ramicane, Infubinol, and Ceftamin. Afterward the quartiles, IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
+
+#### Capomulin Final Tumor Volume
+table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mouse ID</th>
+      <th>Timepoint</th>
+      <th>Drug Regimen</th>
+      <th>Sex</th>
+      <th>Age_months</th>
+      <th>Weight (g)</th>
+      <th>Tumor Volume (mm3)</th>
+      <th>Metastatic Sites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>b128</td>
+      <td>45</td>
+      <td>Capomulin</td>
+      <td>Female</td>
+      <td>9</td>
+      <td>22</td>
+      <td>38.982878</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>b742</td>
+      <td>45</td>
+      <td>Capomulin</td>
+      <td>Male</td>
+      <td>7</td>
+      <td>21</td>
+      <td>38.939633</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>f966</td>
+      <td>20</td>
+      <td>Capomulin</td>
+      <td>Male</td>
+      <td>16</td>
+      <td>17</td>
+      <td>30.485985</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>g288</td>
+      <td>45</td>
+      <td>Capomulin</td>
+      <td>Male</td>
+      <td>3</td>
+      <td>19</td>
+      <td>37.074024</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>g316</td>
+      <td>45</td>
+      <td>Capomulin</td>
+      <td>Female</td>
+      <td>22</td>
+      <td>22</td>
+      <td>40.159220</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+#### Capomulin Quartiles and IQR
+```python
+Capomulin_tumors = Capomulin_merge["Tumor Volume (mm3)"]
+
+quartiles =Capomulin_tumors.quantile([.25,.5,.75])
+lowerq = quartiles[0.25]
+upperq = quartiles[0.75]
+iqr = upperq-lowerq
+
+
+print(f"The lower quartile of Capomulin tumors: {lowerq}")
+print(f"The upper quartile of Capomulin tumors: {upperq}")
+print(f"The interquartile range of Capomulin tumors: {iqr}")
+print(f"The median of Capomulin tumors: {quartiles[0.5]} ")
+```
+  #### The output looks as follws:
+  ![Capomulin quartiles and IQR](Images/Capomulin quartiles_and_IQR.png)
+
+#### Capomulin Outliers using upper and lower bounds
+```python 
+lower_bound = lowerq - (1.5*iqr)
+upper_bound = upperq + (1.5*iqr)
+
+print(f"Capomulin treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
+```
+   #### The output looks as follws:
+![Capomulin outliers_upper and lower_bounds](Images/cap_outliers_upper_and_lower_bounds.png)
+
+
+#### Ramicane Final Tumor Volume
+#### Ramicane Quartiles and IQR
+#### Ramicane Outliers using upper and lower bounds
+
+#### Infubinol Final Tumor Volume
+#### Infubinol Quartiles and IQR
+#### Infubinol Outliers using upper and lower bounds
+
+
+#### Ceftamin Final Tumor Volume
+#### Ceftamin Quartiles and IQR
+#### Ceftamin Outliers using upper and lower bounds
+
 
 * Using Matplotlib, generate a box and whisker plot of the final tumor volume for all four treatment regimens and highlight any potential outliers in the plot by changing their color and style.
 
