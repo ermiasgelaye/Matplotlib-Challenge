@@ -213,9 +213,9 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 
 The Pie Cahrts looks as follows:
 
-![Pandas's Pandas's `DataFrame.plot()`](Images/pi_pandas.png)
+![Pandas's `DataFrame.plot()`](Images/Pan_mice_per_treat.png)
 
-![Matplotlib's `pyplot`](Images/pi_plot.png)
+![Matplotlib's `pyplot`](Images/mat_mice_per_treat.pn)
 
 
 
