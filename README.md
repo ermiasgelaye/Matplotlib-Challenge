@@ -232,7 +232,7 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 * The final tumor volume of each mouse across four of the most promising treatment regimens was created: Capomulin, Ramicane, Infubinol, and Ceftamin. Afterward the quartiles, IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
 
 #### Capomulin Final Tumor Volume
-table border="1" class="dataframe">
+<table border="1" class="dataframe">
   <thead>
     <tr>
       <th></th>
@@ -303,7 +303,7 @@ table border="1" class="dataframe">
       <td>2</td>
     </tr>
   </tbody>
-</table>
+
 #### Capomulin Quartiles and IQR
 ```python
 Capomulin_tumors = Capomulin_merge["Tumor Volume (mm3)"]
