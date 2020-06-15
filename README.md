@@ -322,8 +322,10 @@ print(f"The median of Capomulin tumors: {quartiles[0.5]} ")
 lower_bound = lowerq - (1.5*iqr)
 upper_bound = upperq + (1.5*iqr)
 
-print(f"Capomulin treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
+print(f"Values below {lower_bound} could be outliers.")
+print(f"Values above {upper_bound} could be outliers.")
 ```
+
 The output looks as follws:
 
 ![Capomulin outliers_upper and lower_bounds](Images/cap_outliers_upper_and_lower_bounds.png)
@@ -428,7 +430,8 @@ print(f"The median of Ramicane tumors is: {quartiles[0.5]} ")
 lower_bound = lowerq - (1.5*iqr)
 upper_bound = upperq + (1.5*iqr)
 
-print(f"Ramicane treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
+print(f"Values below {lower_bound} could be outliers.")
+print(f"Values above {upper_bound} could be outliers.")
 ```
    The output looks as follws:
    
@@ -524,7 +527,8 @@ Infubinol_merge.head()
 lower_bound = lowerq - (1.5*iqr)
 upper_bound = upperq + (1.5*iqr)
 
-print(f"Infubinol treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
+print(f"Values below {lower_bound} could be outliers.")
+print(f"Values above {upper_bound} could be outliers.")
 ```
    The output looks as follws:
    
@@ -627,6 +631,7 @@ print(f"The the median of temperatures is: {quartiles[0.5]} ")
 ```python
 lower_bound = lowerq - (1.5*iqr)
 upper_bound = upperq + (1.5*iqr)
+
 print(f"Values below {lower_bound} could be outliers.")
 print(f"Values above {upper_bound} could be outliers.")
 ```
