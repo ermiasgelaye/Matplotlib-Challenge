@@ -325,6 +325,7 @@ upper_bound = upperq + (1.5*iqr)
 print(f"Capomulin treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
 ```
 The output looks as follws:
+
 ![Capomulin outliers_upper and lower_bounds](Images/cap_outliers_upper_and_lower_bounds.png)
 
 
@@ -430,6 +431,7 @@ upper_bound = upperq + (1.5*iqr)
 print(f"Ramicane treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
 ```
    The output looks as follws:
+   
 ![Ramicane outliers_upper and lower_bounds](Images/Ramicane_outliers_upper_and_lower_bounds.png)
 
 #### Infubinol Final Tumor Volume
@@ -525,6 +527,7 @@ upper_bound = upperq + (1.5*iqr)
 print(f"Infubinol treatment tumors volume potential outliers could be found between {lower_bound} and above {upper_bound} could be outliers.")
 ```
    The output looks as follws:
+   
 ![Infubinol outliers_upper and lower_bounds](Images/Infubinol_outliers_upper_and_lower_bounds.png)
 
 
@@ -628,6 +631,7 @@ print(f"Values below {lower_bound} could be outliers.")
 print(f"Values above {upper_bound} could be outliers.")
 ```
    The output looks as follws:
+   
 ![Ceftamin outliers_upper and lower_bounds](Images/Ceftamin_outliers_upper_and_lower_bounds.png)
 
 ## Box and Whisker Plot
